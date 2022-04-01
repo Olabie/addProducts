@@ -1,0 +1,88 @@
+/*Start global rules*/
+*{
+	margin: 0;
+	padding:0 ;
+	box-sizing: border-box;
+}
+.container{
+	margin: auto;
+}
+@media (max-width: 575px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* Small screens */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Medium screens */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+/* Large screens */
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+/* Exstra large screens */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+body{
+	height: 100vh;
+}
+/*End global rules*/
+
+
+
+/*Start products*/
+
+.prod-container{
+	display: flex;
+	flex-wrap: wrap;
+	background: aliceblue;
+  padding: 20px;
+  margin-top: 50px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .prod-container{
+   justify-content: flex-start;
+   
+  }
+}
+.prod{
+	  display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    width: 200px;
+    border-radius: 20px;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.prod:hover{
+	transform: translateY(-5px);
+	 background-color: gainsboro;
+}
+.prod .checker{
+	align-self: start;
+}
+.prod .prod-atts{
+	display: flex;
+}
+/*End products*/
+

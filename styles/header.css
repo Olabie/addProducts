@@ -1,0 +1,59 @@
+/*Start header*/
+#delete-product{
+
+}
+
+header{
+	background: #fff;
+	font-family: sans-serif;
+	height: 100px;
+	color: black;
+}
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	    border-bottom: 1px solid black;
+}
+@media (max-width: 350px)
+{
+	header .container{
+		flex-direction: column;
+		padding: 20px;
+		gap: 10px;
+	}
+	header{
+		height: fit-content;
+	}
+
+}
+header .logo{
+	color: black;
+	letter-spacing: 1px;
+	cursor: pointer;
+	font-weight: bold;
+}
+header .buttons{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+
+}
+
+.buttons .btn{
+	padding: 10px;
+	color: black;
+	cursor: pointer;
+}
+.buttons .add{
+	color: white;
+	text-decoration: none;
+	background-color: green;
+}
+.buttons .del{
+	 border: none;
+    background: crimson;
+    color: white;
+}
+/*End header*/
